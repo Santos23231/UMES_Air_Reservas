@@ -78,7 +78,7 @@ def mostrar_menu_admin():
         else:
             print("Opción no válida. Intente de nuevo.")
 
-def mostrar_menu_usuario():
+def mostrar_menu_usuario(usuario):
     while True:
         print("\nMenú principal - Rol: usuario")
         print("1. Gestión de vuelos")
@@ -121,11 +121,11 @@ def mostrar_menu_principal(usuario):
 def emitir_pase_abordaje(usuario):
     print("\n--- Emisión de pase de abordaje ---")
     reserva = {
-        "nombre": "Fabiola Hernández",
+        "nombre": usuario.get("Fabiola", "Hernandes "),
         "vuelo": "AV123",
         "asiento": "2C",
         "origen": "GUATEMALA",
-        "destino": "IRLANDA",
+        "destino": "Flores peten",
         "fecha": "2025-06-01",
         "hora": "10:00"
     }
@@ -145,8 +145,8 @@ def emitir_pase_abordaje(usuario):
 def mostrar_reportes():
     print("\n--- Reportes operativos ---")
     vuelos = [
-        {"codigo": "AV123", "origen": "Ciudad A", "destino": "Ciudad B", "asientos_totales": 6, "asientos_ocupados": 4},
-        {"codigo": "AV456", "origen": "Ciudad B", "destino": "Ciudad C", "asientos_totales": 6, "asientos_ocupados": 2}
+        {"codigo": "AV123", "origen": "Guatemala", "destino": "Flores peten", "asientos_totales": 6, "asientos_ocupados": 4},
+        {"codigo": "AV456", "origen": "Flores peten", "destino": "Guatemala ", "asientos_totales": 6, "asientos_ocupados": 2}
     ]
 
     print("Reporte de ocupación de vuelos:")
@@ -154,3 +154,32 @@ def mostrar_reportes():
         print(f"Vuelo: {vuelo['codigo']} | Origen: {vuelo['origen']} | Destino: {vuelo['destino']}")
         print(f"Asientos ocupados: {vuelo['asientos_ocupados']} / {vuelo['asientos_totales']}")
         print("-" * 40)
+
+def mostrar_menu_admin_completo(usuario):
+    while True:
+        print("\n--- Menú administrador completo ---")
+        print("1. Emitir pase de abordaje")
+        print("2. Mostrar reportes")
+        print("3. Gestión de usuarios")
+        print("4. Gestión de vuelos")
+        print("5. Gestión de clientes")
+        print("6. Reservas")
+        print("7. Salir")
+        opcion = input("Seleccione una opción: ")
+        if opcion == "1":
+            emitir_pase_abordaje(usuario)
+        elif opcion == "2":
+            mostrar_reportes()
+        elif opcion == "3":
+            menu_usuarios()
+        elif opcion == "4":
+            menu_vuelos()
+        elif opcion == "5":
+            menu_clientes()
+        elif opcion == "6":
+            menu_reservas()
+        elif opcion == "7":
+            print("¡Hasta luego!")
+            break
+        else:
+            print("Opción no válida. Intente de nuevo.")

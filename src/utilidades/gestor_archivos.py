@@ -10,14 +10,17 @@ RUTA_BITACORA = os.path.join("datos", "bitacora.txt")
 
 # Usuarios
 def cargar_usuarios():
+    print("Leyendo archivo:", RUTA_USUARIOS)
     usuarios = []
-    with open('c:/UMES_Air_Reservas/datos/usuarios.txt', 'r', encoding='utf-8') as archivo:
+    with open(RUTA_USUARIOS, 'r', encoding='utf-8') as archivo:
         for linea in archivo:
+            if not linea.strip():
+                continue  
             try:
                 usuario = json.loads(linea.strip())
                 usuarios.append(usuario)
             except json.JSONDecodeError:
-                print("Error al leer un usuario. Línea ignorada.")
+                print(f"Error al leer un usuario. Línea ignorada: {linea.strip()}")
     return usuarios
 
 def guardar_usuario(usuario):
