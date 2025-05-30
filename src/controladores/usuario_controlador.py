@@ -1,7 +1,6 @@
 from modelos.usuario import Usuario
 from modelos.cliente import Cliente
-from utilidades.gestor_archivos import guardar_usuario, guardar_cliente
-from utilidades.gestor_archivos import guardar_cliente
+from utilidades.gestor_archivos import guardar_usuario
 
 def crear_usuario():
     print("=== Crear usuario ===")

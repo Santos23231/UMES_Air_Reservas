@@ -1,9 +1,0 @@
-=== Pase de Abordaje ===
-Pasajero: Juan Pérez
-Vuelo: AV123
-Asiento: 1B
-Origen: Ciudad A
-Destino: Ciudad B
-Fecha: 2025-06-01
-Hora: 10:00
-========================
