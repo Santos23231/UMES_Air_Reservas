@@ -1,0 +1,2 @@
+{"timestamp": "2024-06-01T10:00:00", "usuario": "admin@umesair.com", "accion": "crear_vuelo", "resultado": "éxito"}
+{"timestamp": "2024-06-01T10:05:00", "usuario": "agente@umesair.com", "accion": "crear_reserva", "resultado": "éxito"}

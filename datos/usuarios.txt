@@ -1,0 +1,2 @@
+{"correo": "luis21@gmail.com", "contrasena": "2121", "rol": "administrador"}
+{"correo": "lulul@.com", "contrasena": "1212", "rol": "administrador"}{"id": "alberto21@gmail.com", "nombre": "silverio ", "correo": "alberto21@gmail.com", "hash_contrase\u00f1a": "afbfb89027a4dae87c6033eaa07896e93f3f1ddc2214ca43658982e8aa74b4d4", "rol": "agente "}

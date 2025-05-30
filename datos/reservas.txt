@@ -1,0 +1,2 @@
+{"pnr": "ABC123", "id_cliente": "123456", "id_vuelo": "VU101", "asiento": "1A", "tarifa": 500.0, "estado": "pagada"}
+{"pnr": "DEF456", "id_cliente": "654321", "id_vuelo": "VU102", "asiento": "2B", "tarifa": 500.0, "estado": "pendiente"}

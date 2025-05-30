@@ -1,0 +1,5 @@
+python -m src.pruebas.test_autenticacion
+python -m src.pruebas.test_cliente
+python -m src.pruebas.test_usuario
+python -m src.pruebas.test_vuelo
+python -m src.pruebas.test_reserva
